@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 """  LOOK AND FEEL
 
 set number              "This turns on line numbering
