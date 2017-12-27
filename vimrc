@@ -2,6 +2,13 @@ execute pathogen#infect()
 
 """  LOOK AND FEEL
 
+set laststatus=2
+set noshowmode
+set noruler
+set cmdheight=1
+set noshowcmd
+silent
+
 set number              "This turns on line numbering
 filetype on             "This turns detecting syntax
 colorscheme desert      "This turns 'desert' color scheme
@@ -56,5 +63,11 @@ command -nargs=0 -bar Update if &modified
                            \|endif
 nnoremap <silent> <C-S> :<C-u>Update<CR>
 inoremap <c-s> <Esc>:Update<CR>
+
+let NERDTreeMapActivateNode='<right>'
+let NERDTreeShowHidden=1
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
+
 
 """ end KEYS
